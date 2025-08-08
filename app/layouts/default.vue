@@ -111,10 +111,8 @@
               class="p-2 rounded-lg text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200 dark:text-gray-300 dark:hover:text-emerald-400 dark:hover:bg-emerald-900/20"
               :title="isDark ? '切换到浅色模式' : '切换到深色模式'"
             >
-              <span v-if="isDark">☀️ </span>
-              <span v-else>🌙</span>
               <Icon name="uil:sun" />
-              <span class=".i-uil-sun"></span>11
+              <span class=".i-uil-sun"></span>
             </button>
             
             <!-- Mobile Language Toggle -->
@@ -188,18 +186,6 @@
                 </NuxtLink>
               </div>
             </div>
-            
-            <NuxtLink 
-              to="/about" 
-              class="text-gray-600 hover:text-blue-600 transition-colors font-medium py-2 dark:text-gray-300 dark:hover:text-blue-400"
-              active-class="text-blue-600 dark:text-blue-400"
-              @click="mobileMenuOpen = false"
-            >
-              {{ t('nav.about') }}
-            </NuxtLink>
-            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors font-medium py-2 dark:text-gray-300 dark:hover:text-blue-400" @click="mobileMenuOpen = false">
-              {{ t('nav.blog') }}
-            </a>
           </nav>
         </div>
       </div>
@@ -288,21 +274,22 @@
                 
                 <!-- Search Results -->
                 <Transition name="search-results" appear>
-                  <div v-if="searchResults.length > 0" class="max-h-96 overflow-y-auto">
+                  <div v-if="searchResults.length > 0" class="max-h-80 overflow-y-auto overflow-x-hidden">
+
                     <div class="space-y-2">
                       <div 
                         v-for="(result, index) in searchResults" 
                         :key="result.id"
-                        class="p-3 rounded-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-lg cursor-pointer transition-all duration-300 group"
+                        class="p-3 rounded-lg border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-[1.02] hover:-translate-y-1 cursor-pointer transition-all duration-200 group"
                         :style="{ animationDelay: `${index * 50}ms` }"
                         @click="selectSearchResult(result)"
                       >
                         <div class="flex items-center space-x-3">
-                          <span class="text-2xl group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">{{ result.icon }}</span>
+                          <span class="text-2xl group-hover:scale-110 group-hover:rotate-6 transition-transform duration-200">{{ result.icon }}</span>
                           <div class="flex-1">
-                            <h4 class="font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">{{ locale === 'zh' ? result['name-zh'] : result['name-en'] }}</h4>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-300">{{ locale === 'zh' ? result['description-zh'] : result['description-en'] }}</p>
-                            <span class="inline-block px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full mt-1 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 group-hover:scale-105 transition-all duration-300">{{ result.category }}</span>
+                            <h4 class="font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">{{ locale === 'zh' ? result['name-zh'] : result['name-en'] }}</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-200">{{ locale === 'zh' ? result['description-zh'] : result['description-en'] }}</p>
+                            <span class="inline-block px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full mt-1 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 group-hover:scale-105 transition-all duration-200">{{ result.category }}</span>
                           </div>
                         </div>
                       </div>

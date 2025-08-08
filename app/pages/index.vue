@@ -43,14 +43,14 @@
                       v-for="(result, index) in searchResults"
                       :key="result.id"
                       @click="selectSearchResult(result)"
-                      class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer transition-all duration-300 text-left transform hover:scale-[1.03] hover:-translate-y-1 hover:shadow-md active:scale-[0.98] search-result-item group"
+                      class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer transition-all duration-200 text-left transform hover:scale-[1.03] hover:-translate-y-1 active:scale-[0.98] search-result-item group"
                       :style="{ animationDelay: `${index * 50}ms` }"
                     >
-                      <div class="text-2xl mr-3 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6">{{ result.icon }}</div>
+                      <div class="text-2xl mr-3 transition-all duration-200 group-hover:scale-125 group-hover:rotate-6">{{ result.icon }}</div>
                       <div class="flex-1 text-left">
-                        <h4 class="font-medium text-gray-900 dark:text-white text-left transition-all duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">{{ result.name }}</h4>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 text-left transition-all duration-300 group-hover:text-gray-700 dark:group-hover:text-gray-300">{{ locale === 'zh' ? result['description-zh'] : result['description-en'] }}</p>
-                        <span class="inline-block mt-1 px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-400 rounded-full transition-all duration-300 group-hover:bg-blue-200 dark:group-hover:bg-blue-800/40 group-hover:scale-105 group-hover:shadow-sm">
+                        <h4 class="font-medium text-gray-900 dark:text-white text-left transition-all duration-200 group-hover:text-blue-600 dark:group-hover:text-blue-400">{{ result.name }}</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 text-left transition-all duration-200 group-hover:text-gray-700 dark:group-hover:text-gray-300">{{ locale === 'zh' ? result['description-zh'] : result['description-en'] }}</p>
+                        <span class="inline-block mt-1 px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-400 rounded-full transition-all duration-200 group-hover:bg-blue-200 dark:group-hover:bg-blue-800/40 group-hover:scale-105 group-hover:shadow-sm">
                           {{ t(`categories.${result.category}`) }}
                         </span>
                       </div>
