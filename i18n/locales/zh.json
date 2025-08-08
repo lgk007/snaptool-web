@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "首页",
+    "tools": "工具",
+    "blog": "博客",
+    "contact": "联系",
+    "docs": "文档",
+    "integrations": "集成",
+    "products": "产品",
+    "enterprise": "企业版",
+    "search": "搜索",
+    "toggleLanguage" : "切换到英文",
+    "toggleThemeLight" : "切换到浅色模式",
+    "toggleThemeDark" : "切换到深色模式"
+  },
+  "hero": {
+    "title": "SnapTool.top - 速度、高效、简单",
+    "subtitle": "开发者必备工具集：为高效而生",
+    "searchPlaceholder": "搜索工具...",
+    "searchButton": "搜索"
+  },
+  "search": {
+    "title": "搜索工具",
+    "placeholder": "搜索工具...",
+    "button": "搜索",
+    "searchButton": "搜索",
+    "cancel": "取消",
+    "noResults": "未找到相关工具",
+    "suggestions": "试试这些热门搜索:",
+    "resultsTitle": "搜索结果",
+    "searchFor": "搜索",
+    "foundResults": "找到 {count} 个工具",
+    "useTool": "使用工具",
+    "noResultsDesc": "尝试使用不同的关键词或浏览下面的推荐搜索",
+    "allTools": "所有工具",
+    "allToolsDesc": "浏览我们的完整工具集合"
+  },
+  "categories": {
+    "title": "工具分类",
+    "all": "全部",
+    "hot": "热门工具",
+    "hotDesc": "最受欢迎和推荐的工具集合",
+    "development": "开发工具",
+    "developmentDesc": "开发者必备的编程和开发工具",
+    "design": "设计工具",
+    "designDesc": "创意设计和视觉创作工具",
+    "document": "文档工具",
+    "documentDesc": "文档处理和协作工具",
+    "image": "图片工具",
+    "imageDesc": "图片编辑和处理工具",
+    "conversion": "转换工具",
+    "conversionDesc": "格式转换和数据处理工具",
+    "productivity": "效率工具",
+    "productivityDesc": "提升工作效率的实用工具"
+   },
+   "recommended": {
+    "title": "推荐工具"
+  },
+  "footer": {
+    "description": "发现最好用的在线工具，提升你的工作效率。我们精心收集和整理各类实用工具，让您的工作更加便捷高效。",
+    "privacy": "我们不存储用户的任何数据，保护您的隐私安全。"
+  },
+  "tools": {
+    "title": "工具",
+    "free": "免费",
+    "paid": "付费",
+    "visitTool": "访问工具"
+  },
+  "tool": {
+    "free": "免费",
+    "paid": "付费",
+    "visit": "访问"
+  }
+}

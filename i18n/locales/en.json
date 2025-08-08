@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "tools": "Tools",
+    "blog": "Blog",
+    "contact": "Contact",
+    "docs": "Docs",
+    "integrations": "Integrations",
+    "products": "Products",
+    "enterprise": "Enterprise",
+    "search": "Search",
+    "toggleLanguage" : "Switch to English",
+    "toggleThemeLight" : "Switch to Light Mode",
+    "toggleThemeDark" : "Switch to Dark Mode"
+  },
+  "hero": {
+    "title": "SnapTool.top - Fast, Efficient, Easy",
+    "subtitle": "The Essential Toolkit: Faster File Magic for Busy Builders.​​",
+    "searchPlaceholder": "Search tools...",
+    "searchButton": "Search"
+  },
+  "search": {
+    "title": "Search Tools",
+    "placeholder": "Search tools...",
+    "button": "Search",
+    "searchButton": "Search",
+    "cancel": "Cancel",
+    "noResults": "No tools found",
+    "suggestions": "Try these popular searches:",
+    "resultsTitle": "Search Results",
+    "searchFor": "Search for",
+    "foundResults": "Found {count} tools",
+    "useTool": "Use Tool",
+    "noResultsDesc": "Try different keywords or browse the suggested searches below",
+    "allTools": "All Tools",
+    "allToolsDesc": "Browse our complete collection of tools"
+  },
+  "categories": {
+    "title": "Tool Categories",
+    "all": "All",
+    "hot": "Hot Tools",
+    "hotDesc": "Most popular and recommended tools collection",
+    "development": "Development Tools",
+    "developmentDesc": "Essential programming and development tools for developers",
+    "design": "Design Tools",
+    "designDesc": "Creative design and visual creation tools",
+    "document": "Document Tools",
+    "documentDesc": "Document processing and collaboration tools",
+    "image": "Image Tools",
+    "imageDesc": "Image editing and processing tools",
+    "conversion": "Conversion Tools",
+    "conversionDesc": "Format conversion and data processing tools",
+    "productivity": "Productivity Tools",
+    "productivityDesc": "Practical tools to boost work efficiency"
+   },
+   "recommended": {
+    "title": "Recommended Tools"
+  },
+  "footer": {
+    "description": "Discover the best online tools to boost your productivity. We carefully collect and organize various practical tools to make your work more convenient and efficient.",
+    "privacy": "We do not store any user data, protecting your privacy and security."
+  },
+  "tools": {
+    "title": "Tools",
+    "free": "Free",
+    "paid": "Paid",
+    "visitTool": "Visit Tool"
+  },
+  "tool": {
+    "free": "Free",
+    "paid": "Paid",
+    "visit": "Visit"
+  }
+}
